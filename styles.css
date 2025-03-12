@@ -1,36 +1,34 @@
-/* =========================
-  Paleta de colores y fuentes
-========================= */
+/* Paleta de colores y fuentes */  
 :root {
-    --primary-color: #c04c4c;
+    --primary-color: #0044ff;
     /* Rojo oscuro */
-    --secondary-color: #f2f0ea;
+    --secondary-color: #ffffff;
     /* Fondo claro */
-    --accent-color: #ffc7c7;
+    --accent-color: #000000;
     /* Rosado suave */
-    --text-color: #333;
+    --text-color: #000000;
     /* Color del texto */
-    --transition-speed: 0.3s;
+    --transition-speed: 0.5s;
     --main-font: 'Arial', sans-serif;
 }
 
-/* =========================
-       ESTILOS GENERALES
-  ========================= */
+
+       /*ESTILOS GENERALES*/
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Estilos de foco para elementos interactivos - reducido para ser más práctico */
+/* Focos */
 a:focus,
 button:focus {
     outline: 2px dashed var(--accent-color);
     outline-offset: 2px;
 }
 
-/* Uso de Grid para la disposición general de la página */
+/* Grid*/
 body {
     display: grid;
     grid-template-areas:
@@ -46,7 +44,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Asignación de áreas a cada sección */
+/* áreas */
 header {
     grid-area: header;
 }
@@ -63,9 +61,7 @@ footer {
     grid-area: footer;
 }
 
-/* =========================
-            CABECERA
-  ========================= */
+/*CABECERA*/
 header {
     background-color: var(--primary-color);
     padding: 2rem 1rem;
@@ -74,18 +70,16 @@ header {
 }
 
 header h1 {
-    margin-bottom: 1rem;
+    margin-bottom: 5rem;
     font-size: clamp(1.5rem, 5vw, 2.5rem);
 }
 
-/* =========================
-    MENÚ DE NAVEGACIÓN (Flexbox)
-  ========================= */
+/* MENÚ DE NAVEGACIÓN (Flexbox) */
 nav {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
     background-color: var(--primary-color);
 }
 
@@ -191,9 +185,7 @@ li a {
     font-family: var(--main-font);
 }
 
-/* =========================
-     SECCIÓN (Foto Destacada, Mapas, Tablas, etc.)
-  ========================= */
+/*SECCIÓN (Foto Destacada, Mapas, Tablas, etc.)*/
 article {
     background-color: var(--primary-color);
     width: 200px;
@@ -227,7 +219,7 @@ section {
     width: 100%;
 }
 
-section .mapa {
+section .map {
     display: block;
     margin: 0 auto;
     width: 100%;
@@ -236,9 +228,7 @@ section .mapa {
     height: 300px;
 }
 
-/* =========================
-     TABLAS
-  ========================= */
+/*TABLAS*/
 table {
     width: 100%;
     border-collapse: collapse;
@@ -266,9 +256,7 @@ table tbody td {
     border-bottom: 1px solid var(--secondary-color);
 }
 
-/* =========================
-      CONTENEDOR PRINCIPAL (Grid: Contenido )
-  ========================= */
+/*CONTENEDOR PRINCIPAL (Grid: Contenido )*/
 .main-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -278,9 +266,7 @@ table tbody td {
     padding: 1rem;
 }
 
-/* =========================
-      Estilos para el Carrusel
-  ========================= */
+/*Estilos para el Carrusel*/
 #carousel-container {
     position: relative;
     width: 50%;
@@ -338,19 +324,8 @@ table tbody td {
     }
 }
 
-/* =========================
-             ASIDE (Sidebar)
-  ========================= */
-.sidebar {
-    background-color: var(--accent-color);
-    padding: 1rem;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
-    overflow-y: auto;
-}
 
-/* =========================
-            PIE DE PÁGINA
-  ========================= */
+/* PIE DE PÁGINA*/
 footer {
     background-color: var(--secondary-color);
     padding: 1.5rem 0;
@@ -401,11 +376,9 @@ footer {
     object-fit: cover;
 }
 
-/* =========================
-         MEDIA QUERIES (RESPONSIVIDAD)
-  ========================= */
+/* MEDIA QUERIES (RESPONSIVIDAD)*/
 
-/* Para pantallas medianas (tablets) */
+/* Para pantallas medianas */
 @media (min-width: 768px) {
     .main-container {
         grid-template-columns: 1fr minmax(150px, 300px);

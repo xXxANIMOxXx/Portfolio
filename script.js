@@ -60,9 +60,9 @@ class Carousel {
 document.addEventListener('DOMContentLoaded', () => {
     // Array de imágenes para el carrusel (actualiza las rutas según tus imágenes)
     const imagesArray = [
-        'IMG/img1.jpg',
-        'IMG/img2.jpg',
-        'IMG/img3.jpg'
+        'https://www.dropbox.com/scl/fi/k6g7jbslajqzdvp1cfjv6/Imagen-de-WhatsApp-2025-03-12-a-las-17.04.39_853dda04.jpg?rlkey=tsqa6hhit148g1sxuvt88krt4&st=14csq5sz&dl=1',
+        'https://www.dropbox.com/scl/fi/907g7xz0oaw1wmloo2l2u/Imagen-de-WhatsApp-2025-03-12-a-las-17.04.39_e3ad65cf.jpg?rlkey=nwfkxl0qhffycf156yfqk7tyy&st=el8ly4oh&dl=1',
+        'https://www.dropbox.com/scl/fi/8dzoowioq533tfak5dx02/Imagen-de-WhatsApp-2025-03-12-a-las-17.04.40_cfe70f85.jpg?rlkey=ocxavsxs97nefokhpl3sffp2d&st=zxajhgv0&dl=1'
     ];
 
     // Crear la instancia del carrusel
